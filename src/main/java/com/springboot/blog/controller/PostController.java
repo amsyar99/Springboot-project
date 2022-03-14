@@ -24,6 +24,7 @@ public class PostController {
         return new ResponseEntity<>(postService.createPost(postDto), HttpStatus.CREATED);
     }
     // get all posts rest api
+    // response to get all posts in rest api
     @GetMapping
     public List<PostDto> getAllPosts(
             @RequestParam(value = "pageNo", defaultValue = "0", required = false) int pageNo,
