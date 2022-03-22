@@ -42,7 +42,7 @@ public class CommentServiceImpl implements CommentService {
         commentDto.setId(commentDto.getId());
         commentDto.setName(commentDto.getName());
         commentDto.setEmail(commentDto.getEmail());
-        commentDto.setBody(comment.getBody());
+        commentDto.setBody(commentDto.getBody());
         return commentDto;
     }
 
@@ -51,7 +51,7 @@ public class CommentServiceImpl implements CommentService {
         comment.setId(comment.getId());
         comment.setName(commentDto.getName());
         comment.setEmail(commentDto.getEmail());
-        comment.setBody(comment.getBody());
+        comment.setBody(commentDto.getBody());
         return comment;
 
     }
