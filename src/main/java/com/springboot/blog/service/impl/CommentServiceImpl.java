@@ -9,6 +9,8 @@ import com.springboot.blog.repository.PostRepository;
 import com.springboot.blog.service.CommentService;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CommentServiceImpl implements CommentService {
 
@@ -35,6 +37,12 @@ public class CommentServiceImpl implements CommentService {
         //save comment entity to Database
         Comment newComment = commentRepository.save(comment);
         return mapToDTO(newComment);
+    }
+
+    @Override
+    public List<CommentDto> getCommentsByPostId(long postId) {
+        
+        return null;
     }
 
     private CommentDto mapToDTO(Comment comment){
