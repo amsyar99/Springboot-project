@@ -15,12 +15,9 @@ public class PostDto {
     @Size(min = 2, message = "Title should not less than 2 character")
     private String title;
     @NotEmpty
-    @Size(min = 2, message = "Title should not less than 2 character")
+    @Size(min = 10, message = "Title should not less than 2 character")
     private String description;
     @NotEmpty
-    @Size(min = 2, message = "Title should not less than 2 character")
     private String content;
-    @NotEmpty
-    @Size(min = 2, message = "Title should not less than 2 character")
     private Set<CommentDto> comments;
 }
